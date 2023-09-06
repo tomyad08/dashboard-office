@@ -39,10 +39,10 @@ const CardDepartement = () => {
         <div className="flex-auto w-96">
           <div className="columns-3 justify-between mt-2">
             {dataSlice.map((value) => (
-              <>
+              <div className="drop-shadow-xl">
                 <Link href={value.link}>
                   <div
-                    className="bg-white p-2 mb-1 border rounded-xl"
+                    className="bg-white hover:bg-green-100 p-2 mb-1 border rounded-xl"
                     key={value.id}
                   >
                     <svg
@@ -62,7 +62,7 @@ const CardDepartement = () => {
                     </h1>
                   </div>
                 </Link>
-              </>
+              </div>
             ))}
           </div>
         </div>

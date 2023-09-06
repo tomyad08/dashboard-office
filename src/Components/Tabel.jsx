@@ -41,7 +41,7 @@ const Tabel = ({ input }) => {
           <div className="flex justify-end my-5">
             <div className="px-5 bg-white py-1 border border-2 border-slate-500 rounded-md mx-4">
               <select
-                className="px-2"
+                className="px-2 bg-white"
                 onChange={(e) => setStatus(e.target.value)}
               >
                 <option className={styleOpt} value="">
@@ -64,7 +64,7 @@ const Tabel = ({ input }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
                 height="25"
-                fill="white"
+                fill="green"
                 className="bi bi-x-circle"
                 viewBox="0 0 16 16"
               >
@@ -83,7 +83,7 @@ const Tabel = ({ input }) => {
             xmlns="http://www.w3.org/2000/svg"
             width="25"
             height="25"
-            fill="white"
+            fill="green"
             class="bi bi-filter-square-fill"
             viewBox="0 0 16 16"
           >
@@ -117,8 +117,16 @@ const Tabel = ({ input }) => {
               <div className="w-40 ">{value.task}</div>
               <div className="w-40">{value.priority}</div>
               <div className="w-40">{value.status}</div>
-              <div className="w-40">{value.download}</div>
-              <div className="w-40">{value.submit}</div>
+              <div className="w-40">
+                <button className="px-5 py-1 bg-green-600 rounded-lg text-white">
+                  Download
+                </button>
+              </div>
+              <div className="w-40">
+                <button className="px-5 py-1 bg-blue-600 rounded-lg text-white ms-10 me-5">
+                  Submit
+                </button>
+              </div>
               <div className="w-40">{value.notes}</div>
             </div>
           ))}

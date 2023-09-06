@@ -8,7 +8,7 @@ const Tabel = () => {
     <div className="mt-4">
       {Data ? (
         <div>
-          <div className="flex justify-around rounded-t-xl bg-green-600">
+          <div className="flex justify-around rounded-t-xl bg-green-800 drop-shadow-xl">
             {head.map((value) => (
               <div
                 className="py-1 px-10 rounded-xl font-semibold text-white"

@@ -21,7 +21,7 @@ const PrioritySupportingField = () => {
   };
 
   return (
-    <div className="flex justify-around bg-white rounded-t-lg">
+    <div className="flex justify-around bg-white rounded-lg">
       <PriorityFunction input={inputData1} />
       <PriorityFunction input={inputData2} />
       <PriorityFunction input={inputData3} />

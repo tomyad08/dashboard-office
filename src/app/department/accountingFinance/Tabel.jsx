@@ -4,7 +4,7 @@ import { DataTabelDepartement } from "@/DataDummy/DataTabelDepartement";
 const TabelAccountingFinance = () => {
   const Data = DataTabelDepartement;
   return (
-    <div>
+    <div className="drop-shadow-xl">
       <Tabel input={Data} />
     </div>
   );

@@ -6,10 +6,10 @@ const CardDetail = () => {
     <div className="flex justify-between mt-3">
       {data.map((value) => (
         <div
-          className="bg-white p-2 rounded-lg w-60 flex justify-between"
+          className="bg-blue-100 p-2 rounded-lg w-60 flex justify-between drop-shadow-xl"
           key={value.id}
         >
-          <div className="bg-green-700 p-4 rounded-full">
+          <div className="bg-green-800 p-4 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"

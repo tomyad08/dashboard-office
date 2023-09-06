@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <div className="flex justify-end bg-white px-5 py-2 rounded-xl mt-5">
+    <div className="flex justify-end bg-white px-5 py-2 rounded-xl mt-5 drop-shadow-xl">
       <div className="flex justify-end">
         <div>
           <p className="font-semibold text-lg text-end">Hi, Abdullah.</p>

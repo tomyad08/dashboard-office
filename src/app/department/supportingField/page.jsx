@@ -16,9 +16,9 @@ const SupportingField = () => {
             Supporting Field Dashboard
           </h1>
           <PrioritySupportingField />
-          <div className="flex justify-start bg-white p-2 rounded-b-xl">
+          <div className="flex bg-white justify-start p-2 rounded-b-xl">
             <ProgressSupportingField />
-            <div className="border border-2 rounded-lg p-5 ms-5 text-justify">
+            {/* <div className="border border-2 rounded-lg p-5 ms-5 text-justify">
               <h1 className="text-xl mb-5">Notes:</h1>
               <p className="mb-2 font-semibold">Dear Supporting Field Teams,</p>
               <p className="mb-2">
@@ -32,7 +32,7 @@ const SupportingField = () => {
               </p>
               <p className="pt-2 font-semibold">Best Regards,</p>
               <p className=" text-blue-500 font-semibold">Abdullah Ubaid</p>
-            </div>
+            </div> */}
           </div>
           <TabelSupportingField />
         </div>
