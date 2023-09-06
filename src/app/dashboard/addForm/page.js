@@ -25,9 +25,11 @@ const DetailEmployee = (params) => {
     e.preventDefault();
     router.push("/dashboard");
   };
+  const style =
+    "w-full border-1 rounded-lg bg-slate-200 p-3 my-1 focus:outline-none focus:ring focus:ring-green-300 focus:bg-green-100";
   return (
     <div className="flex py-10 justify-center bg-slate-400">
-      <div className="w-2/4">
+      <div className="w-2/4 bg-white p-5">
         <h1>Logo</h1>
         <div className="border-b-2 border-slate-200 my-2">
           <h1 className="text-4xl font-semibold my-2">Add Employee's Data</h1>
@@ -40,7 +42,7 @@ const DetailEmployee = (params) => {
               name="name"
               value={inputs.name || ""}
               type="text"
-              className="w-full border-1 rounded-lg bg-slate-200 p-2 my-1"
+              className={style}
               onChange={handleChange}
             />
           </label>
@@ -52,7 +54,7 @@ const DetailEmployee = (params) => {
               name="departement"
               value={inputs.departement || ""}
               type="text"
-              className="w-full border-1 rounded-lg bg-slate-200 p-2 my-1"
+              className={style}
               onChange={handleChange}
             />
           </label>
@@ -64,7 +66,7 @@ const DetailEmployee = (params) => {
               name="employee_number"
               value={inputs.employee_number || ""}
               type="text"
-              className="w-full border-1 rounded-lg bg-slate-200 p-2 my-1"
+              className={style}
               onChange={handleChange}
             />
           </label>
@@ -76,7 +78,7 @@ const DetailEmployee = (params) => {
               name="nik"
               type="number"
               value={inputs.nik || ""}
-              className="w-full border-1 rounded-lg bg-slate-200 p-2 my-1"
+              className={style}
               onChange={handleChange}
             />
           </label>
@@ -88,7 +90,7 @@ const DetailEmployee = (params) => {
               type="text"
               name="born"
               value={inputs.born || ""}
-              className="w-full border-1 rounded-lg bg-slate-200 p-2 my-1"
+              className={style}
               onChange={handleChange}
             />
           </label>
@@ -100,7 +102,7 @@ const DetailEmployee = (params) => {
               type="text"
               name="address"
               value={inputs.address || ""}
-              className="w-full border-1 rounded-lg bg-slate-200 p-2 my-1"
+              className={style}
               onChange={handleChange}
             />
           </label>
@@ -112,7 +114,7 @@ const DetailEmployee = (params) => {
               type="text"
               name="domisili"
               value={inputs.domisili || ""}
-              className="w-full border-1 rounded-lg bg-slate-200 p-2 my-1"
+              className={style}
               onChange={handleChange}
             />
           </label>
@@ -124,7 +126,7 @@ const DetailEmployee = (params) => {
               type="text"
               name="education"
               value={inputs.education || ""}
-              className="w-full border-1 rounded-lg bg-slate-200 p-2 my-1"
+              className={style}
               onChange={handleChange}
             />
           </label>
@@ -136,7 +138,7 @@ const DetailEmployee = (params) => {
               type="number"
               name="npwp"
               value={inputs.npwp || ""}
-              className="w-full border-1 rounded-lg bg-slate-200 p-2 my-1"
+              className={style}
               onChange={handleChange}
             />
           </label>
@@ -148,12 +150,12 @@ const DetailEmployee = (params) => {
               type="text"
               name="salary"
               value={inputs.salary || ""}
-              className="w-full border-1 rounded-lg bg-slate-200 p-2 my-1"
+              className={style}
               onChange={handleChange}
             />
           </label>
           <button
-            className="w-full border border-2 border-white bg-green-800 py-2 text-center rounded-lg text-white mb-2 font-semibold mt-10"
+            className="w-full border border-2 border-white bg-green-800 py-3 text-center rounded-lg text-white mb-2 font-semibold mt-10"
             onClick={handleSubmit}
           >
             Submit
@@ -162,7 +164,7 @@ const DetailEmployee = (params) => {
             Nothing has been changed,{" "}
             <Link href="/dashboard">
               {" "}
-              <strong className="py-1 px-4 bg-green-100 rounded-xl cursor-pointer">
+              <strong className="py-2 px-4 bg-green-100 rounded-lg cursor-pointer">
                 back
               </strong>
             </Link>

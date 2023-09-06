@@ -18,10 +18,10 @@ const AccountingFinance = () => {
                 Accounting & Finance Dashboard
               </h1>
 
-              <div className="bg-white p-2 rounded-xl mb-5">
+              <div className="bg-white p-2 rounded-xl mb-5 drop-shadow-xl">
                 <ProgressAccountingFinance />
               </div>
-              <div className="bg-white p-2 rounded-xl">
+              <div className="bg-white p-2 rounded-xl drop-shadow-xl">
                 <PriorityAccountingFinance />
                 <TabelAccountingFinance />
               </div>

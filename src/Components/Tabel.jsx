@@ -41,7 +41,7 @@ const Tabel = ({ input }) => {
           <div className="flex justify-end my-5">
             <div className="px-5 bg-white py-1 border border-2 border-slate-500 rounded-md mx-4">
               <select
-                className="px-2 bg-white"
+                className="px-2 bg-white focus:outline-none"
                 onChange={(e) => setStatus(e.target.value)}
               >
                 <option className={styleOpt} value="">

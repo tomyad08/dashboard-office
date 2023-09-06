@@ -16,12 +16,12 @@ function PriorityFunction({ input }) {
             {
               data: [input.done, input.pending, input.reject],
               borderColor: [
-                "rgb(22, 101, 52)",
+                "rgb(22, 163, 74)",
                 "rgb(50, 69, 247)",
                 "rgb(230, 34, 59)",
               ],
               backgroundColor: [
-                "rgb(22, 101, 52)",
+                "rgb(22, 163, 74)",
                 "rgb(50, 69, 247)",
                 "rgb(230, 34, 59)",
               ],

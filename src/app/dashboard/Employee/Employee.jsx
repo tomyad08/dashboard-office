@@ -41,12 +41,23 @@ const Employee = () => {
           <div className="p-2 rounded-xl my-5">
             <div className="flex justify-end">
               <input
-                className="border border-1 rounded-xl p-1 text-center bg-green-100 text-black"
+                className="p-1 bg-green-100 rounded-s-lg text-center text-black focus:outline-none"
                 placeholder="Search Name"
                 onChange={(e) => setSearch(e.target.value)}
               />
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                className="bi bi-search p-2 bg-green-100 rounded-e-lg"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
             </div>
-            <div className="flex justify-around rounded-t-xl bg-green-600 mt-5">
+            <div className="flex justify-around rounded-t-xl bg-green-800 mt-5">
               {Header.map((value) => (
                 <div
                   className="ps-2 py-2 w-40 text-white font-semibold rounded-xl"
@@ -68,7 +79,7 @@ const Employee = () => {
                   }
                 }).map((value) => (
                   <div
-                    className="flex justify-between border-b-2 border-slate-300 p-2 text-sm"
+                    className="flex justify-between hover:bg-blue-100 border-b-2 border-slate-300 p-2 text-sm"
                     key={value.id}
                   >
                     <div className="w-40">{value.name}</div>
