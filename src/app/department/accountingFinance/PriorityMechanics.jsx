@@ -27,7 +27,7 @@ const PriorityAccountingFinance = () => {
         <PriorityFunction input={inputData2} />
         <PriorityFunction input={inputData3} />
       </div>
-      <p className="text-sm text-justify px-5 pb-5">
+      <p className="text-sm text-justify px-5">
         The division of exploration projects into three priorities with the
         conditions "success," "pending," and "rejected" is used to: Manage
         resources effectively, monitor project performance clearly, identify and

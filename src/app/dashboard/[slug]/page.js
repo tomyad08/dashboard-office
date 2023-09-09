@@ -47,7 +47,7 @@ const DetailEmployee = (params) => {
   return (
     <div className="flex py-10 justify-center bg-slate-400">
       <div className="w-2/4 p-5 bg-white">
-        <h1>Logo</h1>
+        <div className="w-20 h-8 bg-green-800 mb-5"></div>
         <div className="border-b-2 border-slate-200 my-2">
           <h1 className="text-4xl font-semibold my-2">Edit Employee's Data</h1>
         </div>
@@ -172,7 +172,7 @@ const DetailEmployee = (params) => {
             />
           </label>
           <button
-            className="w-full border border-2 border-white bg-green-800 py-4 text-center rounded-lg text-white mb-2 font-semibold mt-10"
+            className="w-full hover:bg-green-500 hover:text-black border border-2 border-white bg-green-800 py-3 text-center rounded-lg text-white mb-2 font-semibold mt-10 text-lg"
             onClick={handleSubmit}
           >
             Submit

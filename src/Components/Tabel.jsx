@@ -32,7 +32,31 @@ const Tabel = ({ input }) => {
     },
   ];
 
-  const Data = input;
+  const Data = [];
+  input.map((value) => {
+    if (value.status == "Done") {
+      const setdata = {
+        id: value.id,
+        task: value.task,
+        priority: value.priority,
+        status: value.status,
+        style:
+          "px-5 py-1 bg-slate-200 rounded-lg text-white ms-10 me-5 cursor-no-drop",
+      };
+      Data.push(setdata);
+    } else {
+      const setdata = {
+        id: value.id,
+        task: value.task,
+        priority: value.priority,
+        status: value.status,
+        style:
+          "px-5 py-1 bg-blue-700 rounded-lg text-white ms-10 me-5 cursor-pointer",
+      };
+      Data.push(setdata);
+    }
+  });
+
   const styleOpt = "bg-white px-10 py-3 text-center";
   return (
     <div>
@@ -113,7 +137,10 @@ const Tabel = ({ input }) => {
               return value;
             }
           }).map((value) => (
-            <div className="flex justify-around border-b-2 border-slate-300 p-2 text-sm">
+            <div
+              className="flex justify-around border-b-2 border-slate-300 p-2 text-sm hover:bg-green-100"
+              key={value.id}
+            >
               <div className="w-40 ">{value.task}</div>
               <div className="w-40">{value.priority}</div>
               <div className="w-40">{value.status}</div>
@@ -123,9 +150,7 @@ const Tabel = ({ input }) => {
                 </button>
               </div>
               <div className="w-40">
-                <button className="px-5 py-1 bg-blue-600 rounded-lg text-white ms-10 me-5">
-                  Submit
-                </button>
+                <div className={value.style}>Submit</div>
               </div>
               <div className="w-40">{value.notes}</div>
             </div>

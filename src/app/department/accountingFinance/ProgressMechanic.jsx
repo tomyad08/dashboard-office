@@ -1,13 +1,27 @@
 import Progress from "@/Components/Progress";
+import { DataProgress } from "@/DataDummy/DataProgress";
 
 const ProgressAccountingFinance = () => {
+  const planed_progress = [];
+  const actual_progress = [];
+  const label_progress = [];
+
+  const Data = DataProgress;
+
+  Data.map((value) => {
+    planed_progress.push(value.progress_planing);
+    actual_progress.push(value.actual_progress);
+    label_progress.push(value.day);
+  });
+
   const inputData = {
-    planed: [10, 12, 15, 16, 20, 21, 22],
-    actual: [10, 13, 16, 17, 21, 24, 25],
+    planed: planed_progress,
+    actual: actual_progress,
+    label: label_progress,
   };
 
   return (
-    <div className="flex justify-around bg-white ">
+    <div className="bg-white ">
       <Progress input={inputData} />
     </div>
   );
