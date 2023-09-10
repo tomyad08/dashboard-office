@@ -33,7 +33,7 @@ export default function Attendance() {
     : `${praStyle} bg-red-600`;
 
   const styleRest = condition
-    ? `${praStyle} bg-slate-400`
+    ? `${praStyle} bg-slate-400 cursor-not-allowed`
     : `${praStyle} bg-blue-500 hover:bg-blue-700 hover:font-semibold`;
 
   return (

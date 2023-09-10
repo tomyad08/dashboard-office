@@ -1,4 +1,3 @@
-import BackToHome from "@/Components/BackHome";
 import PriorityAccountingFinance from "./PriorityMechanics";
 import ProgressAccountingFinance from "./ProgressMechanic";
 import TabelAccountingFinance from "./Tabel";
@@ -22,13 +21,13 @@ const AccountingFinance = () => {
                 className="bg-white p-2 rounded-xl mb-5 drop-shadow-xl"
                 id="graphics"
               >
+                <PriorityAccountingFinance />
                 <ProgressAccountingFinance />
               </div>
               <div
                 className="bg-white p-2 rounded-xl drop-shadow-xl"
                 id="Tabel"
               >
-                <PriorityAccountingFinance />
                 <TabelAccountingFinance />
               </div>
             </div>

@@ -54,7 +54,7 @@ const SideDashboard = () => {
             </div>
           </Link>
         ))}
-        <div className="flex p-3 hover:bg-green-200 hover:text-black active:bg-green-200 rounded-xl active:text-black mt-60">
+        <div className="flex p-3 hover:bg-green-200 hover:text-black active:bg-green-200 rounded-xl active:text-black mt-80">
           <div className="px-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"

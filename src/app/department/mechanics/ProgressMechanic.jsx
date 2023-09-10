@@ -7,7 +7,7 @@ const ProgressMechanics = () => {
   };
 
   return (
-    <div className="flex justify-around bg-white ">
+    <div className="flex justify-around " id="progress">
       <Progress input={inputData} />
     </div>
   );

@@ -25,7 +25,7 @@ export default function Home() {
         <img src="/cargo.jpg" className="h-screen" alt="" />
       </div>
       <div className="flex justify-center bg-white w-2/5 h-screen items-center">
-        <div className="h-96 drop-shadow-xl ">
+        <div className="h-96 ">
           <div className="w-20 h-8 bg-slate-300 mb-5 text-center"></div>
           <h1 className="text-2xl font-semibold border-b-2 border-green-800 pb-2 mb-5">
             Login
@@ -39,7 +39,7 @@ export default function Home() {
             id="username"
             type="text"
             onChange={(e) => setUsername(e.target.value)}
-            className="p-2 w-80 bg-green-200 rounded-lg my-2 focus:outline-none focus:ring focus:ring-green-300 focus:bg-green-100"
+            className="p-2 w-80 bg-green-200 rounded-lg my-2 focus:outline-none focus:ring focus:ring-green-300 focus:bg-green-100 focus:scale-105 focus:drop-shadow-xl"
           />{" "}
           <br />
           <label htmlFor="password" className="text-sm">
@@ -50,7 +50,7 @@ export default function Home() {
             id="password"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
-            className="p-2 w-80 bg-green-200 rounded-lg mb-2 focus:outline-none focus:ring focus:ring-green-300 focus:bg-green-100"
+            className="p-2 w-80 bg-green-200 rounded-lg mb-2 focus:outline-none focus:ring focus:ring-green-300 focus:bg-green-100 focus:scale-105 focus:drop-shadow-xl"
           />{" "}
           <br />
           <button

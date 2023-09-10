@@ -5,7 +5,7 @@ const TabelMechanics = () => {
   const Data = DataTabelDepartement;
 
   return (
-    <div>
+    <div id="table">
       <Tabel input={Data} />
     </div>
   );

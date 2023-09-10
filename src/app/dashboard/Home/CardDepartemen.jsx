@@ -42,7 +42,7 @@ const CardDepartement = () => {
               <div className="drop-shadow-xl">
                 <Link href={value.link}>
                   <div
-                    className="bg-white hover:bg-blue-100 p-2 mb-1 border rounded-xl"
+                    className="bg-white hover:bg-gradient-to-b from-white to-green-500 p-2 mb-1 border rounded-xl hover:scale-110"
                     key={value.id}
                   >
                     <svg
