@@ -120,10 +120,11 @@ function Progress() {
                   </div>
                 ))}
               </div>
-              <div className="flex justify-end drop-shadow-xl">
+              <div className="flex justify-end ">
                 <div className="me-2">
                   <label className="text-sm">Start Date</label>
                   <br />
+
                   <input
                     className="p-1 border-b-2 border-black focus:outline-none text-sm w-24"
                     placeholder="10/01/2022"
@@ -133,6 +134,7 @@ function Progress() {
                 <div>
                   <label className="text-sm">End Date</label>
                   <br />
+
                   <input
                     className="p-1 border-b-2 border-black focus:outline-none text-sm w-24"
                     placeholder="10/01/2022"

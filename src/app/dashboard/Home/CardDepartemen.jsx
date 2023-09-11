@@ -41,7 +41,7 @@ const CardDepartement = () => {
         <Carousel responsive={responsive} infinite={true}>
           {data.map((value) => (
             <Link href={value.link}>
-              <div className="bg-white p-4 rounded-lg drop-shadow-xl mx-2 bg-gradient-to-b from-white to-green-100 hover:scale-105">
+              <div className="bg-white p-4 rounded-lg drop-shadow-xl mx-2 bg-gradient-to-b from-white to-green-100 hover:scale-105 transition duration-700 ease-in-out">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

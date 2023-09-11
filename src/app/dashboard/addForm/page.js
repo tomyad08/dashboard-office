@@ -30,9 +30,10 @@ const DetailEmployee = (params) => {
   return (
     <div className="flex py-10 justify-center bg-slate-400">
       <div className="w-2/4 bg-white p-5">
-        <h1>Logo</h1>
-        <div className="border-b-2 border-slate-200 my-2">
+        <div className="bg-green-800 w-20 h-8"></div>
+        <div className="border-b-2 border-black my-2">
           <h1 className="text-4xl font-semibold my-2">Add Employee's Data</h1>
+          <p className="text-sm">Please input data correctly.</p>
         </div>
         <div className="text-sm">
           <label htmlFor="Name" className="font-semibold">
