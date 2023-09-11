@@ -179,7 +179,7 @@ const DetailEmployee = (params) => {
           </button>
           <p className="pt-5">
             Nothing has been changed,{" "}
-            <Link href="/dashboard">
+            <Link href="/dashboard/#employee">
               {" "}
               <strong className="py-2 px-4 bg-green-100 cursor-pointer rounded-lg">
                 back

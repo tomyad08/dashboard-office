@@ -41,7 +41,7 @@ const Employee = () => {
           <div className="p-2 rounded-xl my-5">
             <div className="flex justify-end">
               <input
-                className="p-1 bg-green-100 rounded-s-lg text-center text-black focus:outline-none "
+                className="p-1 bg-green-100 rounded-s-lg text-center text-black focus:outline-none"
                 placeholder="Search Name"
                 onChange={(e) => setSearch(e.target.value)}
               />

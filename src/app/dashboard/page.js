@@ -39,7 +39,7 @@ const Dashboard = () => {
     },
   ];
   return (
-    <div className="flex">
+    <div className="flex overflow-x-hidden">
       <div className=" w-52 bg-green-800 border border-0 text-white pe-5 py-5 h-screen">
         <div className="text-xl m-5 font-semibold">Logo</div>
         {menuDaftar.map((value) => (
@@ -66,7 +66,7 @@ const Dashboard = () => {
             </div>
           </div>
         ))}
-        <div className="flex p-3 hover:bg-green-200 hover:text-black active:bg-green-200 rounded-xl active:text-black mt-60">
+        <div className="flex p-3 hover:bg-green-200 hover:text-black active:bg-green-200 rounded-xl active:text-black mt-72">
           <div className="px-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"

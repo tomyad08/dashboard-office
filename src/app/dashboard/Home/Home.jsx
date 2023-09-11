@@ -5,7 +5,7 @@ import Tabel from "./Tabel";
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-5/6">
       <NavBar />
       <CardDetail />
       <CardDepartement />
